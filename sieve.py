@@ -1,6 +1,8 @@
 #sieve of eratosthenes challenge devsplug
 #solved by lasdep1k
 
+import numpy as np
+
 def is_prime(number):
 
     if number <= 1:
@@ -14,6 +16,8 @@ def is_prime(number):
     return True
 
 def sieve_of_eratosthenes(n):
+
+    array = np.ones(n,dtype=int)
 
     return [i for i in range(n) if is_prime(i)]
 
