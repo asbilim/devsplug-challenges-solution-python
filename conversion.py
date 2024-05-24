@@ -215,20 +215,6 @@ class Conversion:
 
         
 
-case_1 = Conversion("1001.101").to_decimal()
-case_2 = Conversion("127").to_decimal(from_base=8)
-case_3 = Conversion("1A.3").to_decimal(from_base=16)
-case_4 = Conversion("79.25").translate(from_base=10,to_base=2)
-case_5 = Conversion("54.72").to_decimal(from_base=8)
-case_6 = Conversion("68.5").translate(from_base=10,to_base=16)
-case_7 = Conversion("F1A").to_decimal(from_base=16)
-case_8 = Conversion("101010").to_decimal(from_base=2)
-case_9 = Conversion("2048").translate(from_base=10,to_base=8)
-case_10 = Conversion("3C2").translate(from_base=16,to_base=2)
+case_1 = Conversion("0.72265625").translate(from_base=10,to_base=2)
 
-
-print("[",end="")
-print(case_1,case_2,case_3,case_4,case_5,case_6,case_7,case_8,case_9,case_10,sep=",",end="")
-print("]",end="")
-
-#output: [9.625,87,26.1875,1001111.010000,44.90625,44.8,3866,42,4000,1111000010]
+print(case_1)
