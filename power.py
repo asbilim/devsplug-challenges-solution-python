@@ -11,6 +11,7 @@ def remove_duplicate(array):
             new_array.append(element)
 
     return new_array
+
 def generate_subset(array=[]):
 
     print(array)
@@ -22,6 +23,7 @@ def generate_subset(array=[]):
             result.append(array[i:j])
 
     return remove_duplicate(result)
+
 def main():
 
     print(generate_subset(test_array))
